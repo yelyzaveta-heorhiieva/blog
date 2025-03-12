@@ -1,0 +1,45 @@
+.header {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 64px;
+}
+
+.navList {
+  display: flex;
+  gap: 48px;
+  position: relative;
+}
+
+.navList::after {
+  content: '';
+  border: 1px solid var(--black);
+  width: 0px;
+  height: 16px;
+  position: absolute;
+  right: -32px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.socialMedia::after {
+  content: '';
+  border: 1px solid var(--black);
+  width: 0px;
+  height: 16px;
+  position: absolute;
+  right: -32px;
+}
+
+.searchBtn {
+  background-color: transparent;
+}

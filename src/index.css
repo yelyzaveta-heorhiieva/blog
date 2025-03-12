@@ -1,0 +1,76 @@
+:root {
+  --orange: #f6ad55;
+  --blue: #039be5;
+  --black: #000;
+  --black---870-opacity: rgba(0, 0, 0, 0.87);
+  --pink: #d81b60;
+  --black---600-opacity: rgba(0, 0, 0, 0.6);
+  --white---870-opacity: rgba(255, 255, 255, 0.87);
+  --black---320-opacity: rgba(0, 0, 0, 0.32);
+  --white: #fff;
+  --white---600-opacity: rgba(255, 255, 255, 0.6);
+  --yellow: #e8b500;
+  --background--color: #f5f5f5;
+  --black---80-opacity: rgba(0, 0, 0, 0.08);
+  --grass: #6ee464;
+  --white: #fff;
+  --light-yellow: #ffc800;
+}
+
+:root {
+  --font-family: 'Mukta', sans-serif;
+  --second-family: 'Roboto', sans-serif;
+  --third-family: 'Playfair Display', sans-serif;
+}
+
+body {
+  min-width: 320px;
+  color: var(--black);
+  font-family: var(--font-family);
+}
+
+.container {
+    padding: 0 16px;
+    @media screen and (min-width: 1512px) {
+        padding: 0 128px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+button {
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+  border: none;
+}
