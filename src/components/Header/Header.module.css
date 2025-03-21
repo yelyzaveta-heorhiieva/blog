@@ -1,45 +1,108 @@
+.header::after {
+  content: '';
+  background-color: var(--black---320-opacity);
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 144px;
+  left: 0;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
 .header {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+  z-index: 999;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
   height: 67px;
+}
+.menuContainer {
+  height: 556px;
+  animation: height 0.2s linear;
+}
+
+.headerWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-.nav {
-  display: flex;
-  gap: 64px;
+.menu {
+  animation: slide 0.5s linear;
 }
 
-.navList {
-  display: flex;
-  gap: 48px;
-  position: relative;
+@keyframes height {
+  from {
+    height: 67px;
+  }
+
+  to {
+    height: 556px;
+  }
 }
 
-.navList::after {
-  content: '';
-  border: 1px solid var(--black);
-  width: 0px;
-  height: 16px;
-  position: absolute;
-  right: -32px;
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
-.socialMedia {
-  display: flex;
-  gap: 16px;
-  position: relative;
+.logo {
+  padding-top: 25px;
+  padding-bottom: 26px;
+  line-height: 0;
 }
 
-.socialMedia::after {
-  content: '';
-  border: 1px solid var(--black);
-  width: 0px;
-  height: 16px;
-  position: absolute;
-  right: -32px;
+.searchInput {
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid var(--black---320-opacity);
+  width: 88%;
+  height: 24px;
+  padding-bottom: 8px;
+  margin-left: 12%;
+  margin-top: 12px;
+  margin-bottom: 74px;
+}
+
+.searchInput::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: var(--black---600-opacity);
 }
 
 .searchBtn {
   background-color: transparent;
+  height: 16px;
+}
+
+.menuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 64px;
 }

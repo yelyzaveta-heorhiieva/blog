@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
+
+
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const PostsPage = lazy(() => import('./pages/PostsPage/PostsPage'));
 const PostDetailsPage = lazy(
