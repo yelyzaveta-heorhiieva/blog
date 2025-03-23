@@ -1,9 +1,9 @@
 
 import icons from '../../assets/images/icons.svg';
 import { NavLink } from 'react-router-dom';
-import s from './HeaderMenu.module.css';
+import s from './HeaderNav.module.css';
 
-const HeaderMenu = () => {
+const HeaderNav = () => {
   return (
     <>
       <nav>
@@ -60,4 +60,4 @@ const HeaderMenu = () => {
   );
 };
 
-export default HeaderMenu;
+export default HeaderNav;
