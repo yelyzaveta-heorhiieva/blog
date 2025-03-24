@@ -2,6 +2,7 @@ import {posts} from './imagesPosts.js'
 
 export const postsData = [
   {
+    id: 1,
     url: posts.perfume,
     url_2x: posts.perfume_2x,
     alt: 'perfume',
@@ -10,6 +11,7 @@ export const postsData = [
     description: '5 chemical-free perfumes to try this Spring',
   },
   {
+    id: 2,
     url: posts.book,
     url_2x: posts.book_2x,
     alt: 'book',
@@ -18,6 +20,7 @@ export const postsData = [
     description: '10 habits that changed my life',
   },
   {
+    id: 3,
     url: posts.makeUp,
     url_2x: posts.makeUp_2x,
     alt: 'make up stuff',
@@ -26,6 +29,7 @@ export const postsData = [
     description: "Beauty essentials in every girl's must-have makeup",
   },
   {
+    id: 4,
     url: posts.jacket,
     url_2x: posts.jacket_2x,
     alt: 'jackets',
@@ -34,6 +38,7 @@ export const postsData = [
     description: 'Guide to Winter cleaning closet',
   },
   {
+    id: 5,
     url: posts.pouder,
     url_2x: posts.pouder_2x,
     alt: 'pouder',
@@ -43,6 +48,7 @@ export const postsData = [
       'Best in Beauty 2023: The Best Skin, Hair, Makeup, and Body Products of the Year',
   },
   {
+    id: 6,
     url: posts.clothes,
     url_2x: posts.clothes_2x,
     alt: 'clothes',
@@ -51,6 +57,7 @@ export const postsData = [
     description: '12 Style essentials that make it easy to get dressed',
   },
   {
+    id: 7,
     url: posts.wardrobe,
     url_2x: posts.wardrobe_2x,
     alt: 'wardrobe',
@@ -59,6 +66,7 @@ export const postsData = [
     description: 'The Key Spring/Summer 2024 Trends To Know Now',
   },
   {
+    id: 8,
     url: posts.glasses,
     url_2x: posts.glasses_2x,
     alt: 'glasses',
@@ -67,6 +75,7 @@ export const postsData = [
     description: "A Woman's lifestyle journal",
   },
   {
+    id: 9,
     url: posts.face,
     url_2x: posts.face_2x,
     alt: 'face',
@@ -76,6 +85,7 @@ export const postsData = [
       'So, You Slept in Your Makeup—Try These 10 Skincare Tips to Reverse It',
   },
   {
+    id: 10,
     url: posts.brush,
     url_2x: posts.brush_2x,
     alt: 'brush',
@@ -84,6 +94,7 @@ export const postsData = [
     description: 'How I Decluttered and Organised My Makeup Stash',
   },
   {
+    id: 11,
     url: posts.eye,
     url_2x: posts.eye_2x,
     alt: 'eye',
@@ -92,6 +103,7 @@ export const postsData = [
     description: '6 Eye Makeup Looks Anyone Can Do',
   },
   {
+    id: 12,
     url: posts.lipstick,
     url_2x: posts.lipstick_2x,
     alt: 'lipstick',

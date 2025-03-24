@@ -3,6 +3,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import { postsData } from './sources/posts';
 
 
 
@@ -20,7 +21,7 @@ function App() {
       <Header />
       <Suspense fallback={<div>Loading page...</div>}>
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<HomePage posts={postsData} />} />
           <Route path='/posts' element={<PostsPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/posts/:postId' element={<PostDetailsPage />} />

@@ -14,8 +14,8 @@ import about_1 from '../assets/images/about/about-1.png'
 import about_2 from '../assets/images/about/about-2.png';
 import about_3 from '../assets/images/about/about-3.png';
 import about_1_2x from '../assets/images/about-2x/about-1.png';
-import about_2_2x from '../assets/images/about-2x/about-1.png';
-import about_3_2x from '../assets/images/about-2x/about-1.png';
+import about_2_2x from '../assets/images/about-2x/about-2.png';
+import about_3_2x from '../assets/images/about-2x/about-3.png';
 import clothes from '../assets/images/blog/clothes.jpg';
 import cosmetics from '../assets/images/blog/cosmetics.jpg';
 import glasses from '../assets/images/blog/glasses.jpg';

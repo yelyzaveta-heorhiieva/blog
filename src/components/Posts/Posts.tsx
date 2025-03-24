@@ -1,11 +1,15 @@
 import icons from '../../assets/images/icons.svg';
 import { Link } from 'react-router-dom';
 import s from './Posts.module.css';
-import { postsData } from '../../sources/posts';
 import PostItem from '../PostItem/PostItem';
+import { Post } from '../../App.types';
 
-const Posts = () => {
-  console.log(postsData.length);
+interface Props {
+  posts: Post[];
+}
+
+const Posts = ({posts}: Props) => {
+
 
   return (
     <section className={s.posts}>
@@ -19,9 +23,11 @@ const Posts = () => {
             </svg>
           </Link>
         </div>
-        <ul>
-          {postsData.map((item) => (
-            <PostItem {...item} />
+        <ul className={s.list}>
+          {posts.slice(5, 9).map((item) => (
+            <li key={`${item.id}`} className={s.card}>
+              <PostItem {...item} />
+            </li>
           ))}
         </ul>
       </div>
