@@ -38,12 +38,12 @@ import lipstick_2x from '../assets/images/list-2x/lipstick.jpg';
 import pouder_2x from '../assets/images/list-2x/pouder.jpg';
 
 export const slider = {
-  baking,
-  dog,
-  facecare,
-  oats,
-  toy,
-  woman,
+  // baking,
+  // dog,
+  // facecare,
+  // oats,
+  // toy,
+  // woman,
   baking_2x,
   dog_2x,
   facecare_2x,

@@ -94,3 +94,25 @@
   align-items: center;
   gap: 64px;
 }
+
+@media screen and (min-width: 1024px) {
+  .navWrapper {
+    position: relative;
+  }
+
+  .navWrapper::before,
+  .navWrapper::after {
+    content: '';
+    background-color: var(--black);
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    right: 256px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navWrapper::after {
+    right: 48px;
+  }
+}

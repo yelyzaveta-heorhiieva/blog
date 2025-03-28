@@ -1,0 +1,88 @@
+.logo {
+  margin-bottom: 40px;
+  height: 16px;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer::after,
+.footer::before {
+  content: '';
+  width: 100%;
+  background-color: var(--black---320-opacity);
+  height: 1px;
+  position: absolute;
+  top: 32px;
+}
+
+.footer::after {
+  top: 449px;
+}
+
+.text {
+  margin-top: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+
+.form {
+  margin-left: -6px;
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.input {
+  background-color: var(--black---80-opacity);
+  border: none;
+  border-radius: 999px;
+  width: 100%;
+  height: 43px;
+  outline: transparent;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166%;
+  letter-spacing: 0.01em;
+  padding: 0 16px;
+}
+
+.btn {
+  border-radius: 99px;
+  width: 143px;
+  height: 43px;
+  background: var(--yellow);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footerList {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 19px;
+}
+
+.footerList a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166%;
+  letter-spacing: 0.01em;
+}
+
+.rights {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166%;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}

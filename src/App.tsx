@@ -13,6 +13,8 @@ const PostDetailsPage = lazy(
   () => import('./pages/PostDetailsPage/PostDetailsPage'),
 );
 const ContactPage = lazy(() => import('./pages/ContactPage/ContactPage'));
+const Insta = lazy(() => import('./components/Insta/Insta'));
+const Footer = lazy(() => import('./components/Footer/Footer'));
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
           <Route path='/posts/:postId' element={<PostDetailsPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
+      <Insta />
+      <Footer/>
       </Suspense>
     </>
   );

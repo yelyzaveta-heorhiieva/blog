@@ -13,8 +13,7 @@ const HomePage = ({posts}: Props) => {
     <>
       <Hero />
       <Posts posts={posts} />
-      <AboutMe/>
-      
+      <AboutMe/> 
     </>
   )
 }

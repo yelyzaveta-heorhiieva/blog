@@ -1,0 +1,17 @@
+.socialMedia {
+  display: flex;
+  gap: 40px;
+}
+
+.mediaItem {
+    height: 16px;
+  }
+
+@media screen and (min-width: 1024px) {
+
+  .socialMedia {
+    margin-top: 0;
+    flex-direction: row;
+    gap: 16px;
+  }
+}

@@ -8,9 +8,7 @@ interface Props {
   posts: Post[];
 }
 
-const Posts = ({posts}: Props) => {
-
-
+const Posts = ({ posts }: Props) => {
   return (
     <section className={s.posts}>
       <div className='container'>

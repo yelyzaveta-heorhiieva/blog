@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import HeaderNav from '../HeaderNav/HeaderNav';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 const Header = () => {
   const isTab = useMediaQuery({ query: '(min-width: 1024px)' });
@@ -37,7 +38,8 @@ const Header = () => {
             </button>
           ) : (
             <div className={s.navWrapper}>
-              <HeaderNav />
+              <HeaderNav name='' />
+              <SocialMedia />
               <button type='button' className={s.searchBtn}>
                 <svg width='16' height='16'>
                   <use href={`${icons}#search`}></use>
@@ -56,7 +58,8 @@ const Header = () => {
               className={s.searchInput}
               placeholder='type here ...'
             />
-            <HeaderNav />
+            <HeaderNav name='' />
+            <SocialMedia />
           </div>
         </div>
       )}
