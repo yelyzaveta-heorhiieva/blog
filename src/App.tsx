@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import { postsData } from './sources/posts';
+import ScrollToAnchor from './components/ScrollToAnchor';
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <ScrollToAnchor/>
       <Header />
       <Suspense fallback={<div>Loading page...</div>}>
         <Routes>

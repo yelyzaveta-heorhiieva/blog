@@ -39,7 +39,7 @@ const Header = () => {
           ) : (
             <div className={s.navWrapper}>
               <HeaderNav name='' />
-              <SocialMedia />
+              <SocialMedia name='' />
               <button type='button' className={s.searchBtn}>
                 <svg width='16' height='16'>
                   <use href={`${icons}#search`}></use>
@@ -59,7 +59,7 @@ const Header = () => {
               placeholder='type here ...'
             />
             <HeaderNav name='' />
-            <SocialMedia />
+            <SocialMedia name='' />
           </div>
         </div>
       )}

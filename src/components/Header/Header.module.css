@@ -66,15 +66,10 @@
   margin-left: 12%;
   margin-top: 12px;
   margin-bottom: 74px;
-}
-
-.searchInput::placeholder {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.01em;
-  color: var(--black---600-opacity);
 }
 
 .searchBtn {

@@ -1,10 +1,12 @@
 import clsx from 'clsx';
 import { about } from '../../sources/imagesHomePage';
 import s from './AboutMe.module.css';
+import { useRef } from 'react';
 
 const AboutMe = () => {
+  
   return (
-    <section className={s.aboutMe}>
+    <section className={s.aboutMe} id='about'>
       <div className={clsx('container', s.aboutMeContainer)}>
         <div>
           <h2 className={s.title}>Welcome, I’m Caroline</h2>
@@ -30,10 +32,10 @@ const AboutMe = () => {
             </li>
             <li>
               <p className={s.text}>
-                These pages are not just a blog but a sanctuary for those seeking
-                inspiration for a life well-lived, adorned with beauty, curated
-                fashion, and the essence of mindful elegance. I'm thrilled to
-                share this journey with you
+                These pages are not just a blog but a sanctuary for those
+                seeking inspiration for a life well-lived, adorned with beauty,
+                curated fashion, and the essence of mindful elegance. I'm
+                thrilled to share this journey with you
               </p>
             </li>
           </ul>

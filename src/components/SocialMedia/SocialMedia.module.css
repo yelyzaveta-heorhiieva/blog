@@ -4,14 +4,26 @@
 }
 
 .mediaItem {
-    height: 16px;
-  }
+  height: 16px;
+}
 
 @media screen and (min-width: 1024px) {
-
   .socialMedia {
     margin-top: 0;
     flex-direction: row;
     gap: 16px;
+  }
+
+  .footer {
+    gap: 32px;
+    position: absolute;
+    bottom: 97px;
+    right: 64px;
+  }
+}
+
+@media screen and (min-width: 1512px) {
+  .footer {
+    right: 126px;
   }
 }

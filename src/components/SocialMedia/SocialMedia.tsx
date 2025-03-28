@@ -1,9 +1,13 @@
 import s from './SocialMedia.module.css'
 import icons from '../../assets/images/icons.svg';
+import { Props } from '../../App.types';
+import clsx from 'clsx';
 
-const SocialMedia = () => {
+
+
+const SocialMedia = ({name}: Props) => {
   return (
-    <ul className={s.socialMedia}>
+    <ul className={clsx(s.socialMedia, s[name])}>
       <li className={s.mediaItem}>
         <a href='https://rss.com'>
           <svg width='16' height='16'>

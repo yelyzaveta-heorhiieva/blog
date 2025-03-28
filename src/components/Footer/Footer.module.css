@@ -5,6 +5,7 @@
 
 .footer {
   position: relative;
+  padding: 46px 0 20px 0;
 }
 
 .footer::after,
@@ -14,11 +15,15 @@
   background-color: var(--black---320-opacity);
   height: 1px;
   position: absolute;
-  top: 32px;
+  bottom: 520px;
 }
 
 .footer::after {
-  top: 449px;
+  bottom: 107px;
+}
+
+.searchForm {
+  display: none;
 }
 
 .text {
@@ -28,12 +33,14 @@
   line-height: 145%;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
+  max-width: 344px;
 }
 
 .form {
   margin-left: -6px;
   position: relative;
   margin-bottom: 44px;
+  max-width: 405px;
 }
 
 .input {
@@ -84,5 +91,90 @@
   font-size: 14px;
   line-height: 166%;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    background-color: var(--white);
+  }
+
+  .footerContainer {
+    position: relative;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .searchForm {
+    display: block;
+    position: relative;
+  }
+
+  .searchInput {
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 320px;
+    height: 24px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    background-color: transparent;
+  }
+
+  .searchBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer::before {
+    display: none;
+  }
+
+  .footer::after {
+    content: '';
+    width: 100%;
+    background-color: var(--black---320-opacity);
+    height: 1px;
+    position: absolute;
+    bottom: 64px;
+  }
+
+  .text {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
+  .privacyContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 193px;
+  }
+
+  .footerList {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 0;
+  }
 }

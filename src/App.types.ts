@@ -7,3 +7,8 @@ export interface Post {
   date: Date;
   description: string;
 }
+
+
+export interface Props {
+  name: string;
+}
